@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swiftmodulardependencie",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/paulohmac/swiftmodulardependencie.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "117c00e9407c183f0220e625aa5f738676494db8"
+      }
+    }
+  ],
+  "version" : 2
+}
