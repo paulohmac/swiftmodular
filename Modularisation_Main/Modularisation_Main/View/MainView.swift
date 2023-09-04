@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Dependencie
 
 
 struct MainView: View {
@@ -16,7 +17,7 @@ struct MainView: View {
         VStack {
             List (customers.customerList ?? []) { customer in
                 Section(content: {
-                    CustomerView(customer: customer)
+                    CustomerView(showMessageBox: false, customer: customer)
                 })
             }
             .shadow(color: Color.gray, radius: 2, x: 0, y: 0) //=====> add this
@@ -31,6 +32,7 @@ struct MainView: View {
           await loadData()
         }
     }
+    
     
     func loadData() async{
         await customers.getCustomerList()
