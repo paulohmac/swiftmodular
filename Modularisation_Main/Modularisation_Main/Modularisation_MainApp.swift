@@ -11,7 +11,7 @@ import SwiftUI
 struct Modularisation_MainApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
